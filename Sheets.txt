@@ -1,0 +1,15 @@
+Para Sheets
+Url
+POST https://sheets.googleapis.com/v4/spreadsheets/ID_DA_PLANILHA/values/a1:append?includeValuesInResponse=false&insertDataOption=INSERT_ROWS&responseDateTimeRenderOption=SERIAL_NUMBER&responseValueRenderOption=FORMATTED_VALUE&valueInputOption=USER_ENTERED
+
+Cabeçalho
+Authorization	Bearer {{oauth@access_token}}
+
+Body exemplo
+{ "values": [
+     [
+        "{{telefoneUsuario}}",
+        "{{contact.name}}"
+     ]
+  ]
+}
